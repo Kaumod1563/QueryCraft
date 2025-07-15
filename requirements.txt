@@ -1,0 +1,5 @@
+streamlit
+requests
+python-dotenv
+sqlite3  # or psycopg2 if using PostgreSQL or another database
+# Add any other necessary libraries here based on your database choice and requirements
