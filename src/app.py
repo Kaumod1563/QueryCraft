@@ -18,7 +18,7 @@ st.title("SQL Query Generator from Natural Language")
 st.sidebar.header("Database Operations")
 
 # --- Table Creation ---
-with st.sidebar.expander("Create New Table (Natural Language)", expanded=False):
+with st.sidebar.expander("Create New Table", expanded=False):
     nl_create_table = st.text_input(
         "Describe the table you want to create (e.g. 'Create a table for teachers with id, name, and subject')",
         key="nl_create_table"
@@ -37,7 +37,7 @@ with st.sidebar.expander("Create New Table (Natural Language)", expanded=False):
             st.warning("Please describe the table you want to create.")
 
 # --- Add Entry to Table ---
-with st.sidebar.expander("Add Entry (Natural Language)", expanded=False):
+with st.sidebar.expander("Add Entry", expanded=False):
     nl_add_entry = st.text_input(
         "Describe the entry you want to add (e.g. 'Add a student named John, age 20, grade 3')",
         key="nl_add_entry"
@@ -56,7 +56,7 @@ with st.sidebar.expander("Add Entry (Natural Language)", expanded=False):
             st.warning("Please describe the entry you want to add.")
 
 # --- Alter Table ---
-with st.sidebar.expander("Alter Table (Natural Language)", expanded=False):
+with st.sidebar.expander("Alter Table", expanded=False):
     nl_alter_table = st.text_input(
         "Describe how you want to alter the table (e.g. 'Add a column email to students table')",
         key="nl_alter_table"
